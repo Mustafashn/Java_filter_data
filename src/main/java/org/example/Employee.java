@@ -24,12 +24,6 @@ public class Employee {
         this.leaveOrNot = leaveOrNot;
     }
 
-    @Override
-    public String toString() {
-        return education + ", " + joiningYear + ", " + city + ", Tier " + paymentTier +
-                ", Age " + age + ", " + gender + ", Benched: " + everBenched +
-                ", Experience: " + experienceInCurrentDomain + " years, LeaveOrNot: " + leaveOrNot;
-    }
     public String getEducation() { return education; }
     public int getJoiningYear() { return joiningYear; }
     public String getCity() { return city; }
@@ -39,5 +33,13 @@ public class Employee {
     public String getEverBenched() { return everBenched; }
     public int getExperienceInCurrentDomain() { return experienceInCurrentDomain; }
     public int getLeaveOrNot() { return leaveOrNot; }
+
+    @Override
+    public String toString() {
+        return education + ", " + joiningYear + ", " + city + ", Tier " + paymentTier +
+                ", Age " + age + ", " + gender + ", Benched: " + everBenched +
+                ", Experience: " + experienceInCurrentDomain + " years, LeaveOrNot: " + leaveOrNot;
+    }
+    
 
 }
